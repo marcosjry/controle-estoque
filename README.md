@@ -2,7 +2,7 @@
 
 Projeto criado apenas para fim de estudo.
 
-#Atualmente em desenvolvimento.
+# Atualmente em desenvolvimento.
 
 
 API a ser consumida está sendo também desenvolvida utilizando Java e Spring.
