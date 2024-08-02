@@ -1,0 +1,59 @@
+.color-white {
+    background-color: white;
+}
+.form-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+mat-card{
+    margin: 40px;
+    width: 85%;
+    padding: 0;
+    background-color: white;
+    border-color: rgba(0, 0, 0, 0);
+    h3 {
+        font-family: 'Poppins';
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+mat-card-actions {
+    gap: 10px;
+}
+
+.primary {
+    font-family: 'Poppins';
+    font-weight: 600;
+    background-color: #00ffea !important;
+    color:  rgb(0, 0, 0) !important;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
+}
+.secondary {
+    color: black !important;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.secondary:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4) !important;
+}
+
+button {
+    font-size: 15px;;
+}
+
+.primary:hover {
+    background-color: #000000 !important;
+    color:  #00ffea !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4) !important;
+}
+
+    
+
+
+
+
+
+
+
+
