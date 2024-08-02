@@ -8,9 +8,6 @@ export const APP_ROUTES: Routes = [
     {path: 'clientes',
         loadComponent: () => import('./components/clientes/clientes.component').then(c => c.ClientesComponent)
     },
-    {path: 'produtos',
-        loadComponent: () => import('./components/produtos/produtos.component').then(c => c.ProdutosComponent)
-    },
     {path: 'vendas',
         loadComponent: () => import('./components/vendas/vendas.component').then(c => c.VendasComponent)
     },
@@ -19,5 +16,6 @@ export const APP_ROUTES: Routes = [
     },
     {path: 'compras',
         loadComponent: () => import('./components/compras/compras.component').then(c => c.ComprasComponent)
-    }
+    },{path: 'product',
+        loadChildren: () => import('./components/produtos/produtos.routes').then(r => r.PRODUCT_ROUTES)}
 ];
