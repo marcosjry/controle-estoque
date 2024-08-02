@@ -1,27 +1,19 @@
-# StockControl
+# Controle de Estoque
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+Projeto criado apenas para fim de estudo.
 
-## Development server
+# Atualmente em desenvolvimento.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+API a ser consumida está sendo também desenvolvida utilizando Java e Spring.
+tentando trabalhar com boas práticas de desenvolvimento tanto para o front-end quanto para o backend.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+No momento algumas das funcionalidades disponíveis são: 
+Registros de
+--Vendas
+--Compras
+--Produtos
+--Clientes
+--Fornecedores
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Todo o relacionamento entre as entitades da aplicação está funcionando corretamente no banco de dados. Atualmente estou usando o banco em memória H2 mas ao colocar o sistema em produção, utilizarei PostgreSQL.
