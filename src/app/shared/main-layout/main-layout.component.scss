@@ -1,4 +1,7 @@
-app-menu {
+main {
     display: flex;
-    gap: 25px;
+}
+
+.conteudo {
+    flex-grow: 1;
 }
