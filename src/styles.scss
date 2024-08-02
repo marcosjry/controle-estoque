@@ -1,8 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0;
-
-    background-color: #12262b;
-
+body { 
+    margin: 0;
+    background: white; 
+    color: rgb(0, 0, 0);
  }
+
+.content {
+    margin: 20px;
+    border-radius: 40px 0px 0px 40px;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #ffffff17 !important;
+    border: none;
+}
+
+
+.mat-mdc-text-field-wrapper {
+    background-color: rgb(255, 255, 255) !important;
+    font-weight: 500;
+    font-family: 'Poppins';
+    opacity: 80%;
+}
+
+
+
