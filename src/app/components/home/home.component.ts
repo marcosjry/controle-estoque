@@ -1,15 +1,20 @@
 import { Component } from '@angular/core';
+import { HomeSummaryComponent } from './home-summary/home-summary.component';
+import { HomeFeaturedComponent } from './home-featured/home-featured.component';
 
-import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatButtonModule],
+  imports: [
+    HomeSummaryComponent,
+    HomeFeaturedComponent
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 
-  title = "Home";
+  section = "Home";
+  total = 0;
 }
