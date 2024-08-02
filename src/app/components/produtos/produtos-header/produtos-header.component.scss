@@ -1,0 +1,44 @@
+.produtos-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 95%;
+    align-items: center;
+    flex-wrap: wrap;
+    h3 {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 25px;
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .add-produto {
+        height: 35px;
+        padding: 0 10px;
+        border-radius: 15px;
+        border: none;
+        color: #000000;
+        font-weight: 500;
+        background-color: rgb(0, 255, 234);
+        cursor: pointer;
+        font-family: 'Poppins';
+        font-size: 15px;
+        transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .add-produto:hover {
+        /* Cor de fundo ao passar o mouse */
+        color: #00ffea;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+        background-color: #005851;
+        #svg-icon {
+            fill: #00ffea;
+            transition: 6s ease, 0.3s ease, color 0.3s ease;
+        }
+    }
+
+    
+}
