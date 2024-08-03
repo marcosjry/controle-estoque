@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import { ProdutosHeaderComponent } from './produtos-header/produtos-header.component';
-import { ProdutosSearchComponent } from "./produtos-search/produtos-search.component";
-import { ProdutosTableListComponent } from "./produtos-table-list/produtos-table-list.component";
-
-
-
+import { ProdutosHeaderComponent } from './components/produtos-header/produtos-header.component';
+import { ProdutosSearchComponent } from './components/produtos-search/produtos-search.component';
+import { ProdutosTableListComponent } from './components/produtos-table-list/produtos-table-list.component';
+import { CommonModule, NgIf } from '@angular/common';
 
 
 @Component({
@@ -13,13 +11,14 @@ import { ProdutosTableListComponent } from "./produtos-table-list/produtos-table
   imports: [
     ProdutosHeaderComponent,
     ProdutosSearchComponent,
-    ProdutosTableListComponent
+    ProdutosTableListComponent,
+    NgIf,
+    CommonModule
 ],
   templateUrl: './produtos.component.html',
   styleUrl: './produtos.component.scss'
 })
 export class ProdutosComponent {
-
 
   constructor () {
     

@@ -4,12 +4,11 @@
     width: 100%;
     height: 40px;
     .search-input {
-        border: 1px solid #cac8c8;
+        border: 2px solid #cac8c891;
         border-radius: 10px;
         font-size: 16px;
         width: 100%;
         padding: 20px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         transition: border-color 0.3s, box-shadow 0.3s;
         background-color: #ffffff;
         font-family: 'Poppins';
@@ -21,7 +20,7 @@
     }
     .search-input:focus 
         {
-            border-color: transparent;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             outline: none;
     }
     margin: 40px 0;
@@ -32,7 +31,5 @@
         right: 10px;
         top: 50%;
         transform: translateY(-50%);
-        color: #3f51b5;
-        font-size: 20px;
       }
 }

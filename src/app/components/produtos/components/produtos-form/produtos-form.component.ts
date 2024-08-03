@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, NonNullableFormBuilder, ReactiveFormsModule } from '@angular/forms';
-import { ProdutosService } from '../services/produtos.service';
+import { FormGroup, NonNullableFormBuilder, ReactiveFormsModule } from '@angular/forms';
+
 import { Location } from '@angular/common';
 
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -8,6 +8,7 @@ import { MatInputModule } from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
+import { ProdutosService } from '../../services/produtos.service';
 
 @Component({
   selector: 'app-produtos-form',

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { HomeSummaryComponent } from './home-summary/home-summary.component';
-import { HomeFeaturedComponent } from './home-featured/home-featured.component';
+import { HomeSummaryComponent } from './components/home-summary/home-summary.component';
+import { HomeFeaturedComponent } from './components/home-featured/home-featured.component';
+
+
 
 
 @Component({

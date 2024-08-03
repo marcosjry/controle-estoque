@@ -1,6 +1,7 @@
+import { Product } from './../model/produto';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Product } from '../produto';
+
 import { tap } from 'rxjs';
 
 
@@ -17,16 +18,18 @@ export class ProdutosService {
 
   list() {
     return this.httpClient.get<Product[]>(this.API).pipe(
-      tap(data => console.log(data))
+      tap()
     )
-  }
-
-  add(product: Product[]) {
-    this.list().subscribe(data => product = data);
   }
 
   save(record: Product) {
     return this.httpClient.post<Product>(this.API, record)
+  }
+
+  findById(id: string) {
+    return this.httpClient.get<Product>(`${this.API}/${id}`).pipe(
+      tap()
+    )
   }
 
   

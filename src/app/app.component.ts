@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MainLayoutComponent } from './shared/main-layout/main-layout.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -7,7 +8,7 @@ import { MainLayoutComponent } from './shared/main-layout/main-layout.component'
   selector: 'app-root',
   standalone: true,
   imports: [
-    MainLayoutComponent,
+    MainLayoutComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
