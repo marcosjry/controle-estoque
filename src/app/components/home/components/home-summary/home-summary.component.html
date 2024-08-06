@@ -2,20 +2,20 @@
         <p>Resumo do Estoque</p>
     <div class="summary-container">
         <div class="summary-wrap">
-            <p>Quantidade total de items no estoque</p>
-            <p>{{total}}</p>
+            <h6>Número de produtos diferentes</h6>
+            <p >{{stock.uniqueItemsQuantity}}</p>
         </div>
         <div class="summary-wrap">
-            <p>Número de produtos diferentes</p>
-            <p>{{total}}</p>
+            <h6>Quantidade total de items no estoque</h6>
+            <p >{{stock.totalItemsQuantity}}</p>
         </div>
         <div class="summary-wrap">
-            <p>Valor total do estoque</p>
-            <p>{{total}}</p>
+            <h6>Quantidade Média em estoque por produto </h6>
+            <p >{{stock.productQuantityMedia}}</p>
         </div>
         <div class="summary-wrap">
-            <p>Produtos com maior quantidade em estoque: </p>
-            <p>{{total}}</p>
+            <h6>Valor total do estoque</h6>
+            <p >R$ {{stock.stockTotalValue}}</p>
         </div>
     </div>
 </section>
