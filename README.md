@@ -19,7 +19,6 @@ Registros de
 Todo o relacionamento entre as entitades da aplicação está funcionando corretamente no banco de dados. Atualmente estou usando o banco em memória H2 mas ao colocar o sistema em produção, utilizarei PostgreSQL.
 
 ## Home
-<img src="https://exemplo.com/logo.png" alt="Logo da Minha Empresa">
 https://imgur.com/7Kr1s9n
 
 ## Produtos
