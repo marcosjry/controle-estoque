@@ -2,7 +2,9 @@
 <app-produtos-header></app-produtos-header>
 <div class="product-content">
     <app-produtos-search></app-produtos-search>
-    <app-produtos-table-list></app-produtos-table-list>
+    <app-produtos-table-list
+        [product]="observableProduct"
+    ></app-produtos-table-list>
 </div>
 <ng-container 
     

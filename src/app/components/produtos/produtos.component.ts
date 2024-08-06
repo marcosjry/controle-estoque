@@ -1,8 +1,11 @@
+import { ProdutosService } from './services/produtos.service';
 import { Component } from '@angular/core';
 import { ProdutosHeaderComponent } from './components/produtos-header/produtos-header.component';
 import { ProdutosSearchComponent } from './components/produtos-search/produtos-search.component';
 import { ProdutosTableListComponent } from './components/produtos-table-list/produtos-table-list.component';
 import { CommonModule, NgIf } from '@angular/common';
+import { Observable } from 'rxjs';
+import { Product } from './model/produto';
 
 
 @Component({
@@ -19,9 +22,10 @@ import { CommonModule, NgIf } from '@angular/common';
   styleUrl: './produtos.component.scss'
 })
 export class ProdutosComponent {
+  observableProduct!: Observable<Product[]>;
 
-  constructor () {
-    
+  constructor (private produtosService: ProdutosService) {
+    this.observableProduct = this.produtosService.list();
   }
 
 }

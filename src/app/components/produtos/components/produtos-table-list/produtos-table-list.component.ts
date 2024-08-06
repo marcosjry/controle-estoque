@@ -28,7 +28,7 @@ import { Router, RouterLink } from '@angular/router';
 
 
 export class ProdutosTableListComponent {
-  product!: Observable<Product[]>;
+  @Input() product!: Observable<Product[]>;
 
   constructor(
     private produtosService: ProdutosService,
@@ -36,8 +36,6 @@ export class ProdutosTableListComponent {
   ) {}
 
   ngOnInit() {
-      this.product = this.produtosService.list();
-      console.log(this.product);
   }
 
   columnsToDisplay = ['id', 'name', 'description','price','quantity', 'totalValue', 'edit' ];
