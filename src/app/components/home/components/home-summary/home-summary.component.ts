@@ -8,20 +8,16 @@ import { NgIf } from '@angular/common';
   selector: 'app-home-summary',
   standalone: true,
   imports: [
-    NgIf
+    NgIf,
+    
   ],
   templateUrl: './home-summary.component.html',
   styleUrl: './home-summary.component.scss'
 })
 export class HomeSummaryComponent {
 
-  stock: Stock = {
-    totalItemsQuantity: 0,
-    uniqueItemsQuantity: 0,
-    stockTotalValue: 0,
-    productQuantityMedia: 0,
-    mostStockedProducts: []
-  };
+  
+  stock!: Stock;
 
   constructor(private homeService: HomeService) {
     
@@ -29,7 +25,20 @@ export class HomeSummaryComponent {
 
   ngOnInit() {
    this.homeService.getHomeSummary().subscribe( (data) => {
-    this.stock = data;
+    if(data) {
+      this.stock = data;
+      if(this.stock.productQuantityMedia === "NaN") {
+        this.stock.productQuantityMedia = "0";
+      }
+    } else {
+      this.stock = {
+        mostStockedProducts: [],
+        productQuantityMedia: "0",
+        stockTotalValue: 0,
+        totalItemsQuantity: 0,
+        uniqueItemsQuantity: 0
+      }
+    }
    })
   }
 

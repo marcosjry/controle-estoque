@@ -1,4 +1,12 @@
-<h6>Produtos em Destaque</h6>
-<app-produtos-table-list
-    [product]="featuredProducts"
-></app-produtos-table-list>
+<ng-container class="home-featured" *ngIf="(featuredProducts | async) as product">  
+    <app-produtos-table-list
+        *ngIf="product.length > 0; else noProduct"
+        [product]="product"
+        [columnsToDisplay]="['id', 'name', 'description','price','quantity', 'totalValue', 'edit' ]"
+    ></app-produtos-table-list>
+</ng-container>
+<ng-template #noProduct>
+    <ng-container >
+        <p class="error">Parece que você não adicionou nenhum produto.</p>
+    </ng-container>
+</ng-template>

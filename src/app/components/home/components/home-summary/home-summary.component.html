@@ -1,21 +1,24 @@
 <section>
-        <p>Resumo do Estoque</p>
     <div class="summary-container">
         <div class="summary-wrap">
             <h6>Número de produtos diferentes</h6>
-            <p >{{stock.uniqueItemsQuantity}}</p>
+            <p *ngIf="stock; else noStock">{{stock.uniqueItemsQuantity}}</p>
+            <ng-template  #noStock><p>0</p></ng-template>
         </div>
         <div class="summary-wrap">
             <h6>Quantidade total de items no estoque</h6>
-            <p >{{stock.totalItemsQuantity}}</p>
+            <p *ngIf="stock; else noStock">{{stock.totalItemsQuantity}}</p>
+            <ng-template  #noStock><p>0</p></ng-template>
         </div>
         <div class="summary-wrap">
             <h6>Quantidade Média em estoque por produto </h6>
-            <p >{{stock.productQuantityMedia}}</p>
+            <p *ngIf="stock; else noStock">{{stock.productQuantityMedia}}</p>
+            <ng-template  #noStock></ng-template>
         </div>
         <div class="summary-wrap">
             <h6>Valor total do estoque</h6>
-            <p >R$ {{stock.stockTotalValue}}</p>
+            <p *ngIf="stock; else noStock">R$ {{stock.stockTotalValue}}</p>
+            <ng-template  #noStock><p>0</p></ng-template>
         </div>
     </div>
 </section>
