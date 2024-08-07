@@ -2,11 +2,16 @@
 <app-produtos-header></app-produtos-header>
 <div class="product-content">
     <app-produtos-search></app-produtos-search>
-    <app-produtos-table-list
-        [product]="observableProduct"
-    ></app-produtos-table-list>
+    <ng-container *ngIf="(observableProduct | async) as product">
+        <app-produtos-table-list
+            *ngIf="product.length > 0; else noProduct"
+            [product]="product"
+            [columnsToDisplay]="['id', 'name', 'description','price','quantity', 'totalValue', 'edit' ]"
+        ></app-produtos-table-list>
+    </ng-container>
+    <ng-template #noProduct>
+        <ng-container >
+            <p class="error">Parece que você não adicionou nenhum produto.</p>
+        </ng-container>
+    </ng-template>
 </div>
-<ng-container 
-    
->
-</ng-container>
