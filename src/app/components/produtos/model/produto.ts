@@ -5,5 +5,6 @@ export interface Product {
     price: number,
     quantity: number,
     img: string,
-    date: string
+    date: string,
+    totalValue: number,
 }

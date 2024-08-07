@@ -1,1 +1,35 @@
-<p>produto-encontrado works!</p>
+<ng-container *ngIf="(product | async ) as product">
+    <div *ngIf="product; else noProduct" class="product-detail-container">
+        <h3>ID do Produto: {{ product.id }}</h3>
+        <div class="product-detail">
+            <img [src]="product.img"/>
+            <div class="product-detail-text">
+                <div class="product-details">
+                    <h6>Nome do Produto</h6>
+                    <p>{{ product.name }}</p>
+                </div>
+                <div class="product-details">
+                    <h6>Descrição do Produto</h6>
+                    <p>{{ product.description }}</p>
+                </div>
+                <div class="product-details">
+                    <h6>Preço do Produto</h6>
+                    <p>R$ {{ product.price }}</p>
+                </div>
+                <div class="product-details">
+                    <h6>Quantidade em Estoque</h6>
+                    <p>{{ product.quantity }}</p>
+                </div>
+                <div class="product-details">
+                    <h6>Valor em Estoque</h6>
+                    <p>R$ {{ product.totalValue }}</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <ng-template #noProduct>
+        <h6>Nenhum produto encontrado.</h6>
+    </ng-template>
+</ng-container>
+
+  

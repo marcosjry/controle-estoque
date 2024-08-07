@@ -1,0 +1,52 @@
+img {
+    background-color: rgba(0, 0, 0, 0.096);
+    border-radius: 20px;
+    width: 500px;
+}
+
+.product-detail-container {
+    display: flex;
+    width: 90%;
+    font-family: 'Poppins';
+    flex-direction: column;
+    margin-left: 20px;
+    h3 {
+        font-size: 15px;
+        margin: 20px 0px;
+        font-family: 'lexend';
+        font-weight: 600;
+    }
+    .product-detail {
+        display: flex;
+
+        .product-detail-text {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-left: 10px;
+            width: 100%;
+            .product-details {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                h6 {
+                    font-family: 'Poppins';
+                    font-weight: 600;
+                    font-size: 15px;
+                    margin: 0;
+                }
+
+                p {
+                    border-radius: 20px;
+                    border: 2px solid rgba(0, 0, 0, 0.096) ;
+                    font-size: 20px;
+                    padding: 10px 0;
+                    align-items: center;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

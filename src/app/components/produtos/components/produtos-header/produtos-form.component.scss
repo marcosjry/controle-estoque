@@ -1,0 +1,48 @@
+.color-white {
+    background-color: white;
+}
+.form-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+mat-card{
+    margin: 40px;
+    width: 85%;
+    padding: 0;
+    background-color: white;
+    border-color: rgba(0, 0, 0, 0);
+    h3 {
+        font-family: 'Poppins';
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+
+.primary {
+    font-family: 'Poppins';
+    font-weight: 600;
+    background-color: rgb(0, 255, 234) !important;
+    color: rgb(255, 255, 255) !important;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+button {
+    font-size: 12px;;
+}
+
+.primary:hover {
+    background-color: #005851 !important;
+    color: rgb(255, 255, 255) !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4) !important;
+}
+
+    
+
+
+
+
+
+
+
+
