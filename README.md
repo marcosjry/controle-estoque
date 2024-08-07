@@ -18,12 +18,13 @@ Registros de
 
 Todo o relacionamento entre as entitades da aplicação está funcionando corretamente no banco de dados. Atualmente estou usando o banco em memória H2 mas ao colocar o sistema em produção, utilizarei PostgreSQL.
 
-## Home
-https://imgur.com/7Kr1s9n
+## Interfaces já criadas
+#### Home
+<img src="/src/assets/home1.png" style="width: 750px">
 
-## Produtos
-https://imgur.com/cM1UNp7
+#### Produtos
+<img src="/src/assets/produtos.png" style="width: 750px">
 
-### Registro de Produtos
-https://imgur.com/EarUFVZ
+#### Registro de Produtos
+<img src="/src/assets/add-produto.png" style="width: 750px">
 
