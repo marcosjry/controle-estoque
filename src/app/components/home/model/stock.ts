@@ -2,6 +2,6 @@ export interface Stock {
     totalItemsQuantity: number,
     uniqueItemsQuantity: number,
     stockTotalValue: number,
-    productQuantityMedia: number,
+    productQuantityMedia: string,
     mostStockedProducts: string[]
 }
